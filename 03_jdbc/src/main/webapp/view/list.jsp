@@ -5,12 +5,11 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
-	request.setCharacterEncoding("utf-8");
+request.setCharacterEncoding("utf-8");
 	
 		List<VO> list = DAO.getInstance().getSelectAll();
 		
 		pageContext.setAttribute("list", list);
-		
 %>
 <!DOCTYPE html>
 <html>
